@@ -1,0 +1,15 @@
+{% extends 'Entregable/padre.html' %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+        <form action="/Entregable/buscarDestino/" method="get">
+            <p>Buscador de destinos.</p>
+            <p>Pais: <input type="text" name="pais"></p>
+
+            <input type="submit" value="Buscar">
+
+{% endblock contenidoQueCambia %}
+
+

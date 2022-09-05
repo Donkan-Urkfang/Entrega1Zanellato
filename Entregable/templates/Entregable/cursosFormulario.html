@@ -1,0 +1,29 @@
+{% extends 'Entregable/padre.html' %}
+
+{% load static %}
+
+
+        {% block contenido2 %}
+            <h1 class="mb-1">Formulario de cursos</h1>
+        {% endblock %}
+
+
+
+
+        {% block contenido %}
+
+            <h1>Este es el parrafo del formulario de cursos</h1>
+
+            <form action="/Entregable/cursosFormulario" method = "POST">{% csrf_token %}
+
+                <p>Nombre del curso: <input type="text" name="nombre"> </p>
+
+                <p>Comisión: <input type="number" name="comision"> </p>
+
+                <input type="submit" value="Guardar"> 
+
+            </form>
+
+
+
+        {% endblock %}

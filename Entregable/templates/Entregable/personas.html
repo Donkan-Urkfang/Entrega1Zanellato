@@ -1,0 +1,14 @@
+{% extends 'Entregable/padre.html' %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+<h1>Personas</h1>
+    <ul>
+        {% for datos in lista %}
+            <li>{{datos.nombre}}-{{datos.apellido}}-{{datos.email}} </li>
+        {% endfor %}
+    </ul>
+
+{% endblock contenidoQueCambia %}

@@ -1,0 +1,18 @@
+{% extends 'Entregable/padre.html' %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+    <h1>Este es el formulario de personas</h1>
+
+    <form action="/Entregable/datosForm/" method="post">{% csrf_token %}
+
+        {{miForm.as_table}}
+
+        <input type="submit" value="Crear">
+    </form>
+
+
+
+{% endblock contenidoQueCambia %}

@@ -1,0 +1,19 @@
+{% extends 'Entregable/padre.html' %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+    <h3>Resultados para el pais {{pais}}</h3>
+        
+    {% if ciudades %}
+    <ul>
+        {% for ciudad in ciudades %}
+            <li>
+                {{ciudad}}
+            </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    
+{% endblock contenidoQueCambia %}
