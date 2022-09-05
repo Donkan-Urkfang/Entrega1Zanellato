@@ -21,3 +21,10 @@ class Datos(models.Model):
     def __str__(self):
         return f"Nombre: {self.nombre} - Apellido: {self.apellido} - E-mail: {self.email}"
 
+class Calculo(models.Model):
+
+    precio = models.FloatField(max_length=2)
+    precio2 = models.FloatField(max_length=2)
+
+    def __str__(self): 
+        return f'{self.precio+self.precio2}'
